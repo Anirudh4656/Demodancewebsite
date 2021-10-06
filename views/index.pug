@@ -1,0 +1,230 @@
+doctype html
+html
+  head
+    link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css')
+    link(rel='stylesheet' href='../static/style.css')
+    link(rel='stylesheet' href='../static/index.js')
+    script(src='https://kit.fontawesome.com/3eacec5ffb.js' crossorigin='anonymous')
+    link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x' crossorigin='anonymous')
+    
+    style
+      include ../static/style.css
+      body
+    header
+       video.vid-bg(src='./static/intro2.mp4' autoplay='' loop='infinite' muted='')
+       .nav-area
+         .logo 
+            img(src=" ../static/img/logo101.png", alt="")
+         ul.menu-area
+           li
+             a(href='#')
+               span
+               span
+               span
+               span
+               |  Home
+           li
+             a(href='#')
+               span
+               span
+               span
+               span
+               |  About 
+           li
+             a(href='#')
+               span
+               span
+               span
+               span
+               |  Contact
+           li
+             a(href='#')
+               span
+               span
+               span
+               span
+               |  Blogs 
+       .banner-text
+         h2 WELCOME TO  DANCE ACADEMY
+         P LETS ROCK IT
+         .button
+           button.btn Join Us -
+           .bg
+           .bg
+           .bg
+           .bg
+
+    section#missionSection 
+       .card
+         .box
+           img(src="../static/img/kathak.jpg" alt="")
+           p  Kathak
+       .card
+         .box
+           img(src="../static/img/lyrical.jpg" alt="")
+           p  Lyrical
+       .card
+         .box
+           img(src="../static/img/tap dance.jpg" alt='')
+           p  Jazz  
+       .card
+         .box
+           img(src="../static/img/bhangra.jpg" alt='')
+           p Bhangra
+       .card
+         .box
+           img(src="../static/img/hippp hop.jpg" alt='')
+           p  Contempary
+       .card
+         .box
+           img(src="../static/img/jazz.jpg" alt='')
+           p  Hip Hop 
+        
+    section#animationSection  
+       div.anim 
+
+    section#sponsorsSection  
+      div#sponsor
+         h1 Discover our proprietary Dance Alchemy Tools to Inspire, Structure, Shape and Lead your Facilitations with Confidence to Create more Powerful Embodied and Transformational Results.
+      #sponsor1 
+         h4 We support Dancers, Dance Teachers, Yoga Teaches, Dance & Movement Therapists, Embodiment and Transformational Facilitators, Psychologists, Movement Specialists & Body Workers, Conscious individuals & Change Leaders... 
+    #animation 
+       #anim 
+    section#slider  
+      div#carouselExampleControls.carousel.slide(data-bs-ride="carousel")
+       div.carousel-inner
+         div.carousel-item.active(style='background-color: rgb(56, 39, 8); height: 450px;')
+           .bg1
+             .card2  
+               img(src="../static/img/adii.jpg", alt="", class="spImage2")
+               h1 R.R Khan 
+               h3 Hip Hop Expert 
+               .icon 
+                 i.fab.fa-facebook.fa-2x
+                 i.fab.fa-github.fa-2x
+                 i.fab.fa-twitter.fa-2x
+             .botton 
+               a.btn2(href="#") Explore- 
+               .container2  
+                 span.close &#10006
+                 video(src="../static/adp.mp4" controls='')    
+         div.carousel-item(style='background-color: rgb(56, 39, 8); height: 450px;')
+           .bg1
+             .card2  
+               img(src="../static/img/BRI.jpg", alt="", class="spImage2")
+               h1 Bauri 
+               h3 Bhangra Expert
+               .icon 
+                 i.fab.fa-facebook.fa-2x
+                 i.fab.fa-github.fa-2x
+                 i.fab.fa-twitter.fa-2x
+             .botton 
+               a.btn2(href="#") Explore- 
+               .container2  
+                 span.close &#10006
+                 video(src="../static/2.mp4" controls='')    
+         div.carousel-item(style='background-color: rgb(56, 39, 8); height: 450px;')
+           .bg1
+             .card2  
+               img(src="../static/img/ANKUR.jpeg", alt="", class="spImage2")
+               h1 unknown
+               h3  Khathak 
+               .icon 
+                 i.fab.fa-facebook.fa-2x
+                 i.fab.fa-github.fa-2x
+                 i.fab.fa-twitter.fa-2x
+             .botton 
+               a.btn2(href="#") Explore- 
+               .container2  
+                 span.close &#10006
+                 video(src="../static/2.mp4" controls='')    
+       button.carousel-control-prev(type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev")
+         span.carousel-control-prev-icon(aria-hidden="true")
+         span.visually-hidden Previous
+       button.carousel-control-next(type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next")
+         span.carousel-control-next-icon(aria-hidden="true")
+         span.visually-hidden Next             
+    section#videoslider
+      .container
+        h1 Our Video 
+        .owl-carousel
+          .item-video(data-merge='1')
+             a.owl-video(href='https://youtu.be/CT81JUdka2k' style="width: 365.333px; margin-right: 10px;")
+          .item-video(data-merge='1')
+             a.owl-video(href='https://youtu.be/CT81JUdka2k' style="width: 365.333px; margin-right: 10px;")
+          .item-video(data-merge='2')
+             a.owl-video(href='https://youtu.be/CT81JUdka2k' style="width: 365.333px; margin-right: 10px;")
+          .item-video(data-merge='1')
+             a.owl-video(href='https://youtu.be/CT81JUdka2k' style="width: 365.333px; margin-right: 10px;")
+          .item-video(data-merge='2')
+             a.owl-video(href='https://youtu.be/CT81JUdka2k' style="width: 365.333px; margin-right: 10px;") 
+    footer
+      .main-content
+       .left.box11
+         h2 About us
+         .content
+           p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae hic laudantium sint impedit voluptate magnam earum doloribus asperiores nesciunt quos.
+           .social
+             a(href='#')
+               i.fab.fa-facebook.fa-2x
+             a(href='#')   
+               i.fab.fa-facebook.fa-2x
+             a(href='#')
+               i.fab.fa-twitter.fa-2x
+             a(href='#')
+               i.fab.fa-github.fa-2x 
+       .canter.box11 
+         h2 Address 
+         .content 
+           .place  
+            span.fas.fa-map-marker-alt
+             span.text
+             |Jaipur,Rajasthan 
+           .phone 
+            span.fas.fa-map-phone-alt
+             span.text
+             |258963741
+           .email  
+            span.fas.fa-envelope 
+             span.text
+             |abc@gmail.com
+       .right.box11 
+         h2 Contact us 
+         .content 
+           form(action='#')
+             .email
+               .text Email*
+               input(type='email' required='')
+             .msg
+               .text Message*  
+                textarea(id='' cols='25' rows='2' required='') 
+         .butn
+           button(type='submit')  Send
+      .bottom
+       center
+         span.credit
+           | Created By 
+           a(href='#') Anirudh Sharma
+           |  |
+         span.far.fa-copyright
+         span 2020 All rights reserved.
+      
+             
+
+     
+        
+          
+    script 
+      include ../static/index.js 
+    script(src='https://code.jquery.com/jquery-3.6.0.min.js' integrity='sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=' crossorigin='anonymous')
+    script(type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js')
+    script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js' integrity='sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4' crossorigin='anonymous')
+    script.
+       $(".owl-carousel").owlCarousel({
+       merge:true,
+       loop:true,
+       margin:10,
+       video:true,
+       lazyLoad:true,
+       center:true,
+       });

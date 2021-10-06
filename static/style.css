@@ -1,0 +1,711 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+
+/****************************************INTRODUCTION******************************************/
+
+header{
+    overflow: hidden;
+    height: 110vh;
+}
+.vid-bg {
+    position: absolute;
+    right: -346px;
+    bottom: -31px;
+    height: 1154px;
+}
+.nav-area {
+    background: rgb(16 16 16 / 22%);
+    height: 70px;
+    position: absolute;
+    width: 100%;
+}
+.menu-area{
+    float: right;
+    margin: 22px 39px;
+}
+.logo{
+    margin: 0 50px;
+    height: 60px;
+    float: left;
+    color:aqua;
+    font-size: 35px;
+    text-transform: capitalize;
+    font-weight: bold;
+    letter-spacing: 2px;  
+}
+.logo img {
+    height: 241px;
+    width: 217px;
+    margin: -7px -66px;
+    filter: drop-shadow(2px 4px 6px white);
+}
+.menu-area li {
+    display: inline-block;
+    margin:0 5px;
+}
+
+
+.banner-text{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.banner-text h2{
+    font-size: 55px;
+    margin: 0  -85px;
+    color: #fff;
+}
+.banner-text p {
+    margin-bottom: 1rem;
+    font-size: 23px;
+    margin: 0 -27px;
+    color:#f12020;
+}
+
+/*********************************NEON******************************/
+
+.menu-area li a {
+    position: relative;
+    display: inline-block;
+    padding: 3px 20px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 26px;
+    overflow: hidden;
+    transition: 0.2s;
+    color: aqua;
+}
+.menu-area li a:hover{
+    color: #255784;
+    background: #2196f3;
+    box-shadow: 0 0 10px #2196f3 ,0 0 40px #2196f3 , 0 0 80px #2196f3 ;
+    transition-delay: 1s;
+    
+}
+a span{
+    position: absolute;
+    display: block;
+}
+a span:nth-child(1){
+    top:0;
+    left: -100%;
+    width: 100%;
+    height: 2.3px;
+    background: linear-gradient(90deg,transparent,#7fe456); 
+}
+a:hover span:nth-child(1){ 
+    left: 100%;
+    transition: 1s;
+}
+a span:nth-child(3){
+    bottom:0;
+    right: -100%;
+    width: 100%;
+    height: 2.3px;
+    background: linear-gradient(270deg,transparent,#2196f3);
+}
+a:hover span:nth-child(3){
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+a span:nth-child(2){
+    top:-100%;
+    right:0 ;
+    width: 2.3px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#2196f3);
+}
+a:hover span:nth-child(2){
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+a span:nth-child(4){
+    bottom:-100%;
+    left:0 ;
+    width: 2.3px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#2196f3);
+}
+a:hover span:nth-child(4){
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+
+
+
+/**************************/
+.button {
+    width: 197px;
+    height: 58px;
+    position: absolute;
+    top: 176%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+.btn{
+    
+    position: absolute;
+    
+    width: 100%;
+    
+    height: 100%; background: transparent;
+    
+    border: 2px solid white; outline: none;
+    
+    cursor: pointer; color: white;
+    
+    font-size: 1.4rem;}
+    .bg{position: absolute;
+
+        top:0;
+        
+        left: 0; width: 25%;
+        
+        height: 100%;
+        
+        background: linear-gradient(to right, #3366ff 38%, #9933ff 77%); 
+        z-index: -1;
+        
+        transform: translateY(100%); 
+        transition: all .4s;
+        
+        }
+.banner-text p {
+    margin-bottom: 1rem;
+    font-size: 23px;
+    margin: 0 -27px;
+}
+
+ .button:hover .bg{
+  transform: translateY(0);
+    }
+
+
+
+.bg:nth-child(3){ left: 50px;
+    transition-delay: .1s;
+}
+
+.bg:nth-child(4) {
+    left: 100px;
+     transition-delay: .2s;}
+
+    .bg:nth-child(5){ left: 150px;
+        transition-delay: .3s;
+    }
+
+    
+
+ /*****************************************************************************************/
+
+ 
+ .card h3{
+     text-align: center;
+     margin: 12px;
+     color: black;
+ }
+ #introSection div.small{
+     font-size: 27px;
+     padding: 5px;
+    }
+   /**************************MISSIONSECTION***************************************/
+    
+ #missionSection {
+        height: 566px;
+        margin-top: -16px;
+    }
+      #missionSection::before {
+          content: "";
+          position: absolute;
+          background:url('./static/bck1.png')  ;
+          width: 100%;
+          height: 566px;
+          z-index: -1;
+          opacity: .6;
+    }
+    .card {
+        display: inline-block;
+        border-radius: 10px;
+        width: 17%;
+        margin: 23px 103px;
+        height: 238px;
+        padding: 3px 0px;
+    }
+    
+    
+    .box{
+        box-shadow: 1px 1px 20px rgb(43, 42, 42);
+    position:relative;
+    transition: all 0.4s;
+    overflow: hidden;
+    }
+    .box img {
+        width: 100%;
+        height: 250px;
+    }
+    
+.box p {
+    position: absolute;
+    top: 42px;
+    left: -31px;
+    line-height: 250px;
+    color: #1b1a1a;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-left: 50px;
+    transform: translateX(2000%);
+    transition: all 0.5s;
+    transition-delay: 0.02s;
+}
+    .box:hover p{
+        transform: translateX(0);
+    }
+    .box:hover{
+        transform: scale(1.1);
+    }
+    .box::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(202 194 194 / 61%);
+        border-radius: 0 50% 50% 0 ;
+        transform: translateX(-100%);
+        transition: all 0.4s;
+    }
+    .box:hover::before{
+        transform: translateX(0);
+        border-radius: 0;
+    }
+ /* ***********************************************************animation*********************** */
+
+ #sponsorsSection {
+    height: 375px;
+    background-color: hsl(316deg 11% 96% / 32%);
+}
+#animationSection {
+    height: 57px;
+}
+
+#sponsor {
+        height: 246px;
+        margin: -54px -1px;
+        padding-top: 25px;
+        width: 1319px;
+        padding: 42px 50px;
+    } 
+    #sponsor::before {
+        content: "";
+        position: absolute;
+        background:url('./static/logo101.png')  ;
+       
+  }
+    #sponsor h1 {
+        color: #460707f2;
+        font-size: 33px;
+        font-family: 'Patrick Hand', cursive;
+        margin: 5px;
+    }
+  
+    #sponsor1 h4 {
+        padding: 51px;
+        width: 1294px;
+        color: #c830d2c2;
+        font-size: 18px;
+    }
+ 
+ 
+ .spImage {
+    height: 109px;
+    margin: 2px 25px;
+}
+.anim {
+    background: #f2f2f7;
+    height: 201px;
+}
+.animation{
+    background-color: cadetblue;
+    height: 20px;
+}
+
+ /* ************video-slider coursoul**********
+ ***************************************************************************************
+ ******************************************************************/
+ #videoslider {
+    margin-bottom: 2px;
+    background-color: #0c0a08;
+    height: 372px;
+    margin-top: -3px;
+}
+.container {
+    margin-top: 10px;
+    background: #5d5b5b85;
+     box-shadow: 0 14px 152px #f12020;
+    height: 67px;
+    width: 100%;
+}
+.owl-carousel .owl-video-wrapper{
+    background: #dcd4d4;
+}
+.container h1 {
+    text-align: center;
+    color: ghostwhite;
+    text-shadow: -1px 4px 9px #000000;
+}
+
+.owl-carousel{
+    top:40px
+}
+.owl-carousel .item-video{
+    height: 200px;
+
+}
+/*for dots*/
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
+}
+.owl-dot{
+   display: inline-block;
+}
+.owl-dot span{
+   width: 11px;
+   height: 11px;
+   background: #dce8dcf2;
+   border-radius: 50%;
+   display: flex;
+   margin: 5px 3px;
+}
+.owl-dot.active  span{
+    background-color:#f12020;
+}
+
+/***************************************************SLIDER id ke css**************************/
+  .bg1 {
+    background-color: #060404fc;
+      height: 450px;
+      width: 100%;
+      position: absolute;
+      display: flex;
+      padding-left: 680px;
+  }
+  .card2 {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    min-width: 0px;
+    word-wrap: break-word;
+    background-color: #cabfbf0f;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 2.25rem;
+    height: 379px;
+    width: 315px;
+    margin: 17px -353px;
+    top: 3px;
+}
+.botton {
+    height: 22px;
+    margin: 199px;
+}
+.card2 img {
+    width: 59%;
+    border-radius: 6%;
+    position: absolute;
+    left: 50%;
+    top: -12%;
+    transform: translate(-50%) translateY(50px);
+    transition: all .3s;
+}
+
+.card2 h1,.card2 h3{
+position: absolute;
+top: 255px;
+ Left: 50%;
+Left: 50%;
+transform: translate(-50%) translateY(50px);
+ font-family: 'Times New Roman', Times, serif;
+transition: all 0.6s;}
+.card2:hover img, .card2:hover h1, .card2:hover h3{
+    transform: translate(-50%) translateY(0px);
+}
+.card2 h1{top: 203px;
+    font-size: xx-large;
+    font-family: 'Lobster', cursive;
+color: #f12020;}
+
+    .card2 h3 {
+        top: 257px;
+        font-size: 30px;
+        left: 114px;
+        color: #f12020;
+    }
+
+.card2 .icon{
+position: absolute; 
+bottom: 5px;
+left: 48%;
+transform: translate(-50%);
+}
+
+.card2 .icon i{
+     margin: 10px;}
+
+.card2 .icon i:nth-child(1), .card2 .icon  i:nth-child(3){ transform: translateY(100px);
+
+color: #f12020;
+ transition: all .6s;}
+
+.card2 .icon :nth-child(2){ transform: translateY(100px);
+    color: #f12020;
+    transition: all 0.6s;}
+
+ .card2 .icon i:nth-child(3){  color: #f12020;}
+
+
+.card2:hover .icon i:nth-child(1),
+ .card2:hover .icon i:nth-child(3){ transform: translateY( 15px);}
+
+.card2:hover .icon i:nth-child(2){ transform: translateY( -10px); }
+
+
+
+
+/* ***************************************************************************************
+*****************************slider me BUTTON***************************************** */
+.btn2{
+    text-decoration: none;
+    padding: 15px 40px;
+    background: linear-gradient(to right, #3366ff 38%, #9933ff 77%);
+    color: pink;
+    border-radius: 40px;
+
+    font-family: cursive;
+    font-weight: bolder;
+    box-shadow: 0 14px 152px #f12020;
+}
+.container2 {
+    position: fixed;
+    top: 30%;
+    left: 740px;
+    width: 24%;
+    height: 71%;
+    z-index: 99999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s;
+    
+}
+.container2 .close{
+    position: absolute;
+    top: 600%;
+    right: 25px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.container2 video {
+    width: 292px;
+    max-width: 800px;
+    transform: scaleY(-2);
+    box-shadow: 0 20px 20px rgba(0,0,0,0.2);
+    outline: none;
+    transition: all 0.3s;
+    height: 212px;
+}
+.container2.show{
+    pointer-events: all;
+    opacity: 1;
+}
+.container2.show video{
+    transform: scale(1);
+}
+
+/*********/
+
+#animation{
+    background: linear-gradient(to right, #ff0000 38%, #ff6600 77%);
+}
+#anim{
+    background: linear-gradient(to right, #990099 38%, #cc0099 77%);
+    width: 80px;
+    height: 9px;
+    position: relative;
+    animation-name: anni;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes anni{
+    from{
+        width: 80px;
+    }
+    to{
+        width: 750px;
+    }
+}
+/********************************FOOTER*******************************/
+
+footer{
+    /* position: fixed; */
+    bottom: 0px;
+    width: 100%;
+    background: #111;
+    height: 298px;
+}
+.main-content{
+    display: flex;
+    
+}
+.main-content .box11{
+    flex-basis: 50%;
+    padding: 10px 20px;
+
+}
+.box11 h2{
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #d9d9d9;
+
+}
+.box11 .content{
+    margin: 20px 0 0 0;
+    position: relative;
+
+}
+.left.content .social{
+    margin: 20px 0 0 0;
+
+}
+.left .content p{
+    text-align: center;
+    color: #d9d9d9;
+}
+.left .content .social a{
+    padding: 0 2px;
+
+}
+.left .content .social a i{
+    height: 40px;
+    width: 40px;
+    background: #1a1a1a;
+   line-height: 40px;
+   text-align: center;
+   font-size: 18px;
+   border-radius: 5px;
+   transition: 0.3s;
+
+}
+.left .content .social a i:hover{
+    background: #f12020;
+}
+/*****/
+.canter .content .fas{
+    font-size: 1.4375rem;
+    background: #1a1a1a;
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.3s;
+cursor: pointer;
+}
+.canter .content .fas:hover{
+               background: #f12020;
+}
+.canter .content .text{
+    font-size: 1.0625rem;
+    font-weight: 500;
+    padding-left:10px ;
+}
+.canter .content .phone{
+    margin: 10px 0;
+}
+.right form .msg{
+    margin: 10xp;
+}
+.right form .text{
+    font-size: 1.0625rem;
+    margin-bottom: 2px;
+    color: white;
+}
+.right form input,.right form textarea{
+    width: 100%;
+    font-size: 1.0625rem;
+    background: #151515;
+    padding-left: 10px;
+    border: 1px solid #222222;
+}
+.right form input:focus,.right form textarea:focus{
+    outline-color: #3498db;
+}
+.right form input{
+    height: 35px;
+
+}
+.right form .butn{
+    margin-top: 10px;
+
+}
+.right form .butn button{
+    height: 40px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #f12020;
+    font-size: 1.0625rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .3s;
+
+}
+.right form .butn button:hover{
+    background: #000;}
+.bottom .center{
+    padding: 5px;
+    font-size: 0.9375rem;
+    background: #151515;
+
+}
+.bottom center span{
+    color: #656565;
+}
+.bottom center a{
+    color: #f12020;
+    text-decoration: none;
+}
+.bottom center a:hover{
+    
+    text-decoration: underline;
+}
+/***/
+.box11 .content::before{
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 100%;
+    background: #1a1a1a;
+    top: -10px;
+}
+.box11 .content::after{
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 15%;
+    background: #f12020;
+    top: -10px;
+}
