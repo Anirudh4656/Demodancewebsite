@@ -5,7 +5,8 @@ const app =  express();
 const port = process.env.PORT || 8000;
  
 app.use('/static', express.static('static'))
-app.use(express.urlencoded())
+app.use(express.urlencoded({extended: true})); 
+app.use(express.json()); 
 
 
 app.set('view engine','pug')
@@ -17,6 +18,7 @@ app.get('/', (req,res)=>{
     const params = {}
     res.status(200).render('index.pug',params);
 })
+
 app.post('/', (req,res)=>{
     
     
