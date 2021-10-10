@@ -2,7 +2,7 @@ const express = require("express");
 const path = require("path");
 const fs = require("fs");
 const app =  express();
-const port = 8000;
+const port = process.env.PORT || 8000;
  
 app.use('/static', express.static('static'))
 app.use(express.urlencoded())
